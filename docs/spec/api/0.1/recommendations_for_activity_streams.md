@@ -95,7 +95,7 @@ The discovery of changes to entity metadata requires a consistent and well under
 
 This process can be optimized by allowing the metadata providers to publish changes in chronological order including descriptions of how their entity descriptions have changed, enabling consuming systems to retrieve only the resources that have been modified since they were last retrieved.
 
-__Change Notifications__<br>These recommendations do not include a subscription mechanism for enabling change notifications to be pushed to remote systems. Only periodic polling for the set of changes that must be processed is supported. A subscription/notification pattern may be added in a future version after implementation experience with the polling pattern has demonstrated that it would be valuable.
+__Change Notifications__<br>These recommendations do not include a subscription mechanism for enabling change notifications to be pushed to remote systems. Only periodic polling for the set of changes that must be processed is supported. A subscription/notification pattern may be added in a future version after implementation experience with the polling pattern has demonstrated that it would be valuable. Note also that there is no required chronological orger required (i.e., forward or backward in time), only that it is done consistently.
 {: .warning}
 
 Work that is out of scope of this API includes the recommendation or creation of any descriptive metadata formats, and the recommendation or creation of metadata search APIs or protocols. The diverse domains represented across the entity metadata already have successful standards fulfilling these use cases. Also out of scope is optimization of the transmission mechanisms providing access points for consumers to query.
